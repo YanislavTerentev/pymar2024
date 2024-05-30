@@ -1,3 +1,6 @@
+"""Print "*" pyramid"""
+
+
 def create_pyramid(count):
     """This function prints a pyramid"""
 

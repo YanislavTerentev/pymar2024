@@ -1,3 +1,6 @@
+"""Print number of statues"""
+
+
 def statues_number(statues):
     """function checks how much statues needed to make whole line"""
     statues_ordered = sorted(statues)

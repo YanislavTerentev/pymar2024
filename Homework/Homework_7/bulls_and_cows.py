@@ -1,3 +1,6 @@
+"""Cows and bulls game"""
+
+
 import random
 
 
@@ -42,7 +45,7 @@ def bulls_and_cows_game(answer, guess):
             cows += 1
     print(f'{cows} cows, {bulls} bulls')
     if bulls == 4:
-        result = print('Congratulations! You win!')
+        print('Congratulations! You win!')
     if bulls != 4:
         guess = trying_guess()
         result = bulls_and_cows_game(answer, guess)
