@@ -13,16 +13,15 @@ def validate_number(number_card):
     card_numbers_sum = 0
     if not number_validate:
         return False
-    else:
-        arr = list(map(int, number_card))
-        arr.reverse()
-        for index, number in enumerate(arr, start=1):
-            if index % 2 == 0:
-                number *= 2
-                if number > 9:
-                    number -= 9
-            card_numbers_sum += number
-        return card_numbers_sum % 10 == 0
+    arr = list(map(int, number_card))
+    arr.reverse()
+    for index, number in enumerate(arr, start=1):
+        if index % 2 == 0:
+            number *= 2
+            if number > 9:
+                number -= 9
+        card_numbers_sum += number
+    return card_numbers_sum % 10 == 0
 
 
 user_input = input('Enter a card number: ')
