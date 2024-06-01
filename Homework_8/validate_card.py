@@ -12,7 +12,7 @@ def validate_number(number_card):
     number_validate = check_number_number(number_card)
     card_numbers_sum = 0
     if not number_validate:
-        print('Invalid card number')
+        return False
     else:
         arr = list(map(int, number_card))
         arr.reverse()
