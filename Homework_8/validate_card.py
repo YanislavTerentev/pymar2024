@@ -3,10 +3,12 @@ import re
 
 
 def check_number_number(number_number):
+    """This unction checks card number"""
     return re.fullmatch(r'[0-9]{13,16}', number_number)
 
 
 def validate_number():
+    """This program validate card"""
     number_number = input('Enter a card number: ')
     number_validate = check_number_number(number_number)
     card_numbers_sum = 0
