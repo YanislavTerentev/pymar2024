@@ -21,11 +21,11 @@ def solution(array):
             if compare_elements(copy_array):
                 result = True
                 break
-    print(result)
+    return result
 
 
-solution([1, 2, 3])
-solution([1, 2, 1, 2])
-solution([1, 3, 2, 1])
-solution([1, 2, 3, 4, 5, 3, 5, 6])
-solution([40, 50, 60, 10, 20, 30])
+assert solution([1, 2, -3]) is True, "Solution failed"
+assert (solution([1, 2, 1, 2])) is False, "Solution failed"
+assert (solution([1, 3, 2, 1])) is False, "Solution failed"
+assert (solution([1, 2, 3, 4, 5, 3, 5, 6])) is False, "Solution failed"
+assert (solution([40, 50, 60, 10, 20, 30])) is False, "Solution failed"
