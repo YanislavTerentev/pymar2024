@@ -5,7 +5,6 @@ def is_number(func):
     def wrapper(sting):
         result = func(sting)
         if not isinstance(result, float):
-            print(ERROR_MESSAGE)
             return ERROR_MESSAGE
         return result
     return wrapper
@@ -14,9 +13,7 @@ def is_number(func):
 @is_number
 def checking_strung(sting):
     try:
-        float(sting)
-        s = float(sting)
-        return s
+        return float(sting)
     except ValueError:
         return sting
 

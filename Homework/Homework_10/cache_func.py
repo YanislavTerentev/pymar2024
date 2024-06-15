@@ -5,7 +5,7 @@ def cache(func):
         if arg in cache_dictionary:
             return cache_dictionary[arg]
         cache_dictionary[arg] = func(arg)
-        return func(arg)
+        return cache_dictionary[arg]
 
     return wrapper
 

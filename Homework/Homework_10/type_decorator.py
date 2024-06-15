@@ -6,8 +6,7 @@ def typed(type_element):
                 if isinstance(arg, type_element):
                     formatted_array.append(arg)
                 else:
-                    value = type_element(arg)
-                    formatted_array.append(value)
+                    formatted_array.append(type_element(arg))
             return func(*formatted_array)
         return wrapper
     return convert
