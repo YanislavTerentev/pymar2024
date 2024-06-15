@@ -21,4 +21,3 @@ class Deposit:
 bank = Bank()
 dep1 = Deposit(1000, 1)
 assert bank.deposit(dep1.deposit_amount, dep1.deposit_period) == 1104.71
-
