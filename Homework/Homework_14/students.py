@@ -31,6 +31,7 @@ def students():
 
                 students_in_group[students_group] += 1
                 groups_marks[students_group] = students_marks
+                # groups_marks[students_group] = groups_marks.get(students_group, 0)
 
         with open('students.txt', 'a', encoding='utf-8') as file:
             file.write(f"\nTotal students: {len(lines)}\n")

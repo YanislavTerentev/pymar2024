@@ -1,0 +1,13 @@
+Johnny, group_1,7,8,8,9,10
+Steve, group_2,2,5,7,4,8
+Alex, group_3,7,8,8,9,8
+Tim, group_3,2,4,5,0,10
+Jack, group_1,5,9,2,3,8
+Bettie, group_2,1,5,8,9,4
+Veronica, group_2,7,0,8,9,8
+Emili, group_1,3,8,8,1,8
+Jessie, group_1,2,2,6,9,10
+
+Total students: 9
+
+Students in groups: {' group_1': 4, ' group_2': 3, ' group_3': 2}
